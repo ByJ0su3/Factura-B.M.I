@@ -1,0 +1,299 @@
+/* Estilos generales */
+.compras-container {
+  width: 100%;
+  max-width: 900px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+/* Encabezado */
+.compras-header {
+  background: linear-gradient(to right, #1a3c8f, #2a5fcc);
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+  border-bottom: 2px solid #0d2a6b;
+}
+
+.compras-header h1 {
+  font-size: 30px;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  margin: 0;
+}
+
+/* Información de Factura */
+.factura-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 15px 20px;
+  background: #f0f5ff;
+  border-bottom: 1px solid #d0d9e9;
+  gap: 10px;
+}
+
+.factura-field {
+  display: flex;
+  align-items: center;
+}
+
+.factura-label {
+  font-weight: bold;
+  min-width: 120px;
+  color: #1a3c8f;
+}
+
+/* Secciones comunes */
+.section {
+  padding: 15px 20px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.section-title {
+  font-weight: bold;
+  color: #1a3c8f;
+  margin-bottom: 15px;
+  border-bottom: 1px dashed #a0b8e0;
+  padding-bottom: 5px;
+}
+
+/* Sección Suplidor */
+.supplier-section {
+  background: #f8fbff;
+}
+
+.supplier-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+/* Sección Número */
+.numero-section {
+  background: #f0f8ff;
+}
+
+.numero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+/* Campos comunes */
+.field {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.field-label {
+  font-weight: bold;
+  min-width: 120px;
+  color: #1a3c8f;
+}
+
+/* Sección Muebles y Equipos */
+.muebles-section {
+  background: #f5f9ff;
+}
+
+.buttons-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.action-btn {
+  padding: 10px 5px;
+  background: linear-gradient(to bottom, #4a7de8, #2a5fcc);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 15px;
+  text-align: center;
+  transition: all 0.3s;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+.action-btn:hover {
+  background: linear-gradient(to bottom, #3a6dd8, #1a4fbc);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Checkbox ITBIS */
+.checkbox-section {
+  padding: 12px 20px;
+  background: #e6f0ff;
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-input {
+  margin-right: 10px;
+  width: 18px;
+  height: 18px;
+  accent-color: #2563eb;
+}
+
+.checkbox-label {
+  font-weight: 1200;
+}
+
+/* Sección Inmueble */
+.inmueble-section {
+  background: #f8fbff;
+}
+
+.inmueble-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+/* Sección Fecha y Foto */
+.fecha-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background: #f0f8ff;
+}
+
+.fecha-content {
+  display: flex;
+  align-items: center;
+}
+
+.fecha-label {
+  margin-right: 15px;
+  font-weight: bold;
+}
+
+.upload-btn {
+  padding: 10px 20px;
+  background: linear-gradient(to bottom, #4a7de8, #2a5fcc);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+}
+
+.upload-btn:hover {
+  background: linear-gradient(to bottom, #3a6dd8, #1a4fbc);
+}
+
+.icon-camera::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='white'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z'%3E%3C/path%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Sección Monto */
+.monto-section {
+  padding: 15px 20px;
+  background: #f5f9ff;
+}
+
+.monto-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.monto-field {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px dashed #d0d9e9;
+}
+
+.total-field {
+  font-weight: bold;
+  font-size: 18px;
+  border-top: 2px solid #c0d0f0;
+  margin-top: 8px;
+  padding-top: 12px;
+}
+
+/* Footer con botón Salir */
+.footer {
+  padding: 15px 20px;
+  text-align: right;
+  background: linear-gradient(to right, #1a3c8f, #2a5fcc);
+}
+
+.salir-btn {
+  padding: 12px 30px;
+  background: linear-gradient(to bottom, #ff6b6b, #e74c3c);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.salir-btn:hover {
+  background: linear-gradient(to bottom, #ff5c5c, #d63c2c);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+/* Línea discontinua */
+.dashed-line {
+  height: 1px;
+  background: repeating-linear-gradient(to right, #ccc, #ccc 5px, transparent 5px, transparent 10px);
+  margin: 15px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .supplier-grid,
+  .numero-grid,
+  .inmueble-grid,
+  .monto-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .buttons-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .factura-info {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .buttons-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .fecha-section {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
+  
+  .upload-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
